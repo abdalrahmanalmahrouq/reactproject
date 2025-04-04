@@ -13,7 +13,7 @@ class topbanner extends Component {
                             <Col className='text-center'>
                            <h1 className='topbannertitle'> MAHROUQ SERVICES </h1>
                            <h4 className='topbannersubtitle'>This Is My Services Website</h4>
-                           <Button variant="primary">Primary</Button>
+                           <Button variant="primary">Learn More</Button>
                          
                             </Col>
                             
