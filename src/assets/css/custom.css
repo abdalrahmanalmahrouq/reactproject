@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.topFixedBanner{
+    background-image: url(../images/topbanner.jpg);
+    min-height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.topBannerLayout{
+    position: absolute;
+    min-height: 550px;
+    width: 100%;
+    background: rgb(0, 0, 0,0.7);
+}
+
+.topBannerText{
+    margin-top: 10em;
+}
+
+.topbannertitle{
+    font-size:48px;
+    color: #fff;
+    font-style: 'montserrat', sans-serif;
+    font-weight: 700;
+}
+.topbannersubtitle{
+    color: #fff;
+    font-style: 'montserrat', sans-serif;
+    font-weight: 400;
+}
