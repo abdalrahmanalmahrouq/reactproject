@@ -2,21 +2,25 @@ import React, { Component, Fragment } from 'react'
 import { Navbar,Nav,NavDropdown ,Container} from 'react-bootstrap'
 import '../../assets/css/custom.css'
 import '../../assets/css/bootstrap.min.css'
+import logowhite from '../../assets/images/logowhite.png'
+import logodark from '../../assets/images/logodark.png'
+
  class Topnavigation extends Component {
   
     constructor() {
     super();
     this.state = {
       navBarTitle: "Topnavtitle",
+      navBarLogo: [logowhite],// because it is object
     };
   }
 
 
   onScroll = () => {
     if (window.scrollY > 100) {
-      this.setState({ navBarTitle: "Topnavtitlescroll" });
+      this.setState({ navBarTitle: "Topnavtitlescroll" ,navBarLogo: [logodark] });
     } else {
-      this.setState({ navBarTitle: "Topnavtitle" });
+      this.setState({ navBarTitle: "Topnavtitle" ,navBarLogo: [logowhite] });
     }
   }
 
@@ -34,7 +38,7 @@ import '../../assets/css/bootstrap.min.css'
         <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
           <Container fluid>
             <Navbar.Brand href="#" className={this.state.navBarTitle} >
-              MAHROUQ SERVICES
+             <img src={this.state.navBarLogo} alt="" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
