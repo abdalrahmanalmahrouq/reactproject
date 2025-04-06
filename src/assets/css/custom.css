@@ -84,3 +84,17 @@
     margin-bottom:3rem; 
     width: 100px;
   }
+  .Topnavtitle{
+    color: #000000 !important;
+    font-size: 24px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    margin-left: 1rem;
+  }
+  .Topnavtitlescroll{
+    color: #2b0f8f !important;
+    font-size: 24px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    margin-left: 1rem;
+  }
