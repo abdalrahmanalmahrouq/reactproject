@@ -10,7 +10,7 @@ import '../../assets/css/bootstrap.min.css'
     return (
       <Fragment>
         <Container>
-            <h1 className='text-center servicetitle'>MY SERVICESS</h1>
+            <h1 className='text-center servicetitle'>MY SERVICES</h1>
             <div className='buttom'></div>
             <Row className='text-center' >
                 <Col lg={4} md={6} sm={12}  >
