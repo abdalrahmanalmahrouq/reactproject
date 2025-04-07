@@ -47,12 +47,12 @@ import logowhite from '../../assets/images/logowhite.png'
               <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
               </Nav>
               <Nav>
-                <Nav.Link href="#" className={this.state.navItem}>Login</Nav.Link>
-                <Nav.Link href="#" className={this.state.navItem}>Register</Nav.Link>
-                <Nav.Link href="#" className={this.state.navItem}>Home</Nav.Link>
-                <Nav.Link href="#" className={this.state.navItem}>Services</Nav.Link>
-                <Nav.Link href="#" className={this.state.navItem}>Contact</Nav.Link>
-                <Nav.Link href="#" className={this.state.navItem}>About</Nav.Link>
+                <Nav.Link href="#" className={this.state.navItem}>HOME</Nav.Link>
+                <Nav.Link href="#" className={this.state.navItem}>ABOUT</Nav.Link>
+                <Nav.Link href="#" className={this.state.navItem}>SERVICES</Nav.Link>
+                <Nav.Link href="#" className={this.state.navItem}>COURSES</Nav.Link>
+                <Nav.Link href="#" className={this.state.navItem}>PORTFOLIO</Nav.Link>
+                <Nav.Link href="#" className={this.state.navItem}>CONTACT US</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
