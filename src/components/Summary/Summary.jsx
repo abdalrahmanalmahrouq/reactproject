@@ -6,6 +6,8 @@ import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faUserCheck } from '@fortawesome/free-solid-svg-icons';
 import { faLifeRing } from '@fortawesome/free-regular-svg-icons';
+import CountUp from 'react-countup';
+
  class Summary extends Component {
   render() {
     return (
@@ -18,13 +20,27 @@ import { faLifeRing } from '@fortawesome/free-regular-svg-icons';
                   <Row className='countsection'>
                     <Col>
                     <FontAwesomeIcon className='primeicon' icon={faCheckCircle} />
-                      <h2 className='summarytitle'>1000+</h2>
+                 
+                    
+                            <h2 className='summarytitle'><CountUp start={0} end={1000}>
+                                    {({ countUpRef, start }) => (
+                                                
+                                        <span ref={countUpRef} />            
+                                        
+                                    )}
+                                    </CountUp>+</h2>
                       <h3 className='summarysubtitle'>Projects Completed</h3>
                        
                     </Col>
                     <Col>
                     <FontAwesomeIcon className='primeicon' icon={faUserCheck} />
-                      <h2 className='summarytitle'>500+</h2>
+                      <h2 className='summarytitle'><CountUp start={0} end={500}>
+                                    {({ countUpRef, start }) => (
+                                                
+                                        <span ref={countUpRef} />            
+                                        
+                                    )}
+                                    </CountUp>+</h2>
                       <h3 className='summarysubtitle'>Happy Clients</h3>
                       
                     </Col>

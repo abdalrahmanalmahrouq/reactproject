@@ -16,8 +16,10 @@
     "bootstrap": "^5.3.5",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.9",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
+    "react-visibility-sensor": "^5.1.1",
     "recharts": "^2.15.2",
     "web-vitals": "^2.1.4"
   },
