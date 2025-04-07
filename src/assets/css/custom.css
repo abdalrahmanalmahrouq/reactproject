@@ -123,3 +123,57 @@
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 700 !important;
   }
+
+  .summaryLayout{
+    position: absolute;
+    min-height: 550px;
+    width: 100%;
+    background: rgba(4, 4, 24, 0.7);
+}
+
+
+.summarytitle{
+  color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 35px !important;
+}
+
+.summarysubtitle{
+  color: #667575 !important;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 22px !important;
+}
+
+.countsection{
+  margin-top: 25% !important;
+}
+
+.cardtitle{
+  color: #000000 !important;
+  font-family: 'Raleway', sans-serif !important; 
+  font-weight: 600 !important;
+  font-size: 20px !important;
+}
+.cardsubtitle{
+  color: #000000 !important;
+  font-family: 'Raleway', sans-serif !important; 
+  font-weight: 400 !important;
+  font-size: 15px !important;
+}
+
+.summarycard{
+  margin-top: 25%;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px !important;
+}
+.primeicon{
+font-size: 30px !important;
+color: #ffffff;
+margin-bottom: 10px !important;
+}
+.secondicon{
+  font-size: 18px;
+  color: #435470;
+}
