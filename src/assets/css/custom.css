@@ -54,9 +54,9 @@
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
  }
  .serviceName{
-    color: #03326d;
+    color: #03326d !important;
     margin-top: 1rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
     font-size: 24px;
     font-weight: 600;
  }
@@ -176,4 +176,19 @@ margin-bottom: 10px !important;
 .secondicon{
   font-size: 18px;
   color: #435470;
+}
+
+.recentprojectcard{
+  background-color: #ffffff !important;
+  width: 22em;
+  border-radius: 0.6em;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 1em;
+  transition: all ease 200ms;
+}
+.recentprojectcard:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
+ 
 }

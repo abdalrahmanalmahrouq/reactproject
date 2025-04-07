@@ -14,8 +14,8 @@ import CountUp from 'react-countup';
       <Fragment>
         <Container fluid={true} className='topFixedBanner p-0'>
           <div className='summaryLayout'>
-            <Container className='text-center'>
-              <Row>
+            <Container >
+              <Row className='text-center'>
                 <Col lg={8} md={6} sm={12}>
                   <Row className='countsection'>
                     <Col>
@@ -54,7 +54,7 @@ import CountUp from 'react-countup';
                 </Col>
 
                 <Col lg={4} md={6} sm={12}>
-                    <Card style={{ width: '18rem' }} className='summarycard'>
+                    <Card style={{ width: '18rem' }} className='summarycard '>
                         
                       
                         <Card.Body>
