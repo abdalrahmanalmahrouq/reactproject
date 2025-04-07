@@ -3,8 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import It from '../../assets/images/it.png'
 import Cooking from '../../assets/images/cooking.png'
 import Real from '../../assets/images/realstate.png'
-import '../../assets/css/custom.css'
-import '../../assets/css/bootstrap.min.css'
+
  class Services extends Component {
   render() {
     return (
