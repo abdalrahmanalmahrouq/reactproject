@@ -7,7 +7,7 @@ import Slider from 'react-slick';
   render() {
 
     var settings = {
-        autoPlaySpeed: 3000,
+        autoPlaySpeed: 1000,
         autoPlay: true,
         arrows: false,
         dots: true,
@@ -35,7 +35,7 @@ import Slider from 'react-slick';
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 600,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1

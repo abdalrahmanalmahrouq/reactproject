@@ -217,7 +217,7 @@ margin-bottom: 10px !important;
 .reviewcard{
   background-color: #03326d !important;
   min-height: 400px;
-  width: 100%;
+
 }
 
 .reviewtitle{
@@ -249,4 +249,52 @@ margin-bottom: 10px !important;
   height: 100px !important;
   border-radius: 50%;
   margin : 0 auto !important;
+}
+.AboutImageBack{
+  background-color: #03326d !important;
+  height: 500px !important;
+  width: 500px !important;
+  margin-top: 3rem !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+}
+
+.AboutImage{
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 50% !important;
+  margin : 0 auto !important;   
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.AboutText{
+  margin-top: 10rem !important;
+  margin-left: 5rem !important;
+
+}
+
+.AboutText1{
+  color: #03326d !important;
+  font-family: 'Raleway', sans-serif !important; 
+  font-weight: 600 !important;
+  font-size: 20px !important;
+}
+
+.AboutText2{
+  color: #03326d !important;
+  font-family: 'Raleway', sans-serif !important; 
+  font-weight: 900 !important;
+  font-size: 25px !important;
+}
+
+.AboutText3{
+  color: #03326d !important;
+  font-family: 'Raleway', sans-serif !important; 
+  font-weight: 600 !important;
+  font-size: 18px !important;
 }

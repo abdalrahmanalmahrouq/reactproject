@@ -8,6 +8,7 @@ import RecentProjects from './components/RecentProjects/RecentProjects';
 import Courses from './components/Courses/Courses';
 import Videos from './components/Videos/Videos';
 import Review from './components/Review/Review';
+import About from './components/About/About';
 function App() {
   return (
     <div >
@@ -20,7 +21,7 @@ function App() {
       <Courses/>
       <Videos/>
       <Review/>
-      
+      <About/>
     </div>
   );
 }
