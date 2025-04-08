@@ -6,6 +6,7 @@ import Analysis from './components/Analysis/Analysis';
 import Summary from './components/Summary/Summary';
 import RecentProjects from './components/RecentProjects/RecentProjects';
 import Courses from './components/Courses/Courses';
+import Videos from './components/Videos/Videos';
 function App() {
   return (
     <div >
@@ -16,6 +17,7 @@ function App() {
       <Summary/>
       <RecentProjects/>
       <Courses/>
+      <Videos/>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap'
   render() {
     return (
      <Fragment>
-      <h1 className='text-center servicetitle'>PYTHON COURSES</h1>
+      <h1 className='text-center servicetitle'>ALL COURSES</h1>
       <div className='buttom'></div>
       <Container>
       <Row>

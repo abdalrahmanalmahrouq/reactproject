@@ -205,3 +205,12 @@ margin-bottom: 10px !important;
   color: #03326d !important;  
 
 }
+
+.cardvideo{
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 5px  !important;
+  padding: 8rem 3rem 8rem 3rem !important;
+  background-color: #03326d !important;
+  margin: 20px auto;
+}
+
