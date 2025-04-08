@@ -192,3 +192,16 @@ margin-bottom: 10px !important;
   box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
  
 }
+
+.courseimg{
+  width: 100% !important;
+}
+
+.viewdetails{
+  text-decoration: none !important;
+  font-family: 'Raleway', sans-serif !important; 
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  color: #03326d !important;  
+
+}

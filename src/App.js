@@ -5,6 +5,7 @@ import Topnavigation from './components/Topnavigation/Topnavigation';
 import Analysis from './components/Analysis/Analysis';
 import Summary from './components/Summary/Summary';
 import RecentProjects from './components/RecentProjects/RecentProjects';
+import Courses from './components/Courses/Courses';
 function App() {
   return (
     <div >
@@ -14,6 +15,7 @@ function App() {
       <Analysis/>
       <Summary/>
       <RecentProjects/>
+      <Courses/>
     </div>
   );
 }

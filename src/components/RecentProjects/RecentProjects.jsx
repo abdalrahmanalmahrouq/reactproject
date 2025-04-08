@@ -5,7 +5,7 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap'
   render() {
     return (
       <Fragment>
-        <h1 className='text-center servicetitle'>OUR SERVICES</h1>
+        <h1 className='text-center servicetitle'>OUR PROJECTS</h1>
         <div className='buttom'></div>
         <Container className='text-center'>
             

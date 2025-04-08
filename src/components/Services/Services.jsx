@@ -8,7 +8,7 @@ import Real from '../../assets/images/realstate.png'
   render() {
     return (
       <Fragment>
-        <Container>
+        <Container className='text-center'>
             <h1 className='text-center servicetitle'>MY SERVICES</h1>
             <div className='buttom'></div>
             <Row className='text-center' >
