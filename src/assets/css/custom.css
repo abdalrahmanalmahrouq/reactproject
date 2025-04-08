@@ -214,3 +214,39 @@ margin-bottom: 10px !important;
   margin: 20px auto;
 }
 
+.reviewcard{
+  background-color: #03326d !important;
+  min-height: 400px;
+  width: 100%;
+}
+
+.reviewtitle{
+  color: #fcfcfc;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  margin-bottom: 3rem;font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 28px;    
+}
+.reviewbuttom{
+  background:#ffffff none repeat scroll 0 0;
+  height: 3px;
+  width: 85px;
+  margin: -1.9rem auto 0;
+  margin-bottom:3rem; 
+  width: 100px;
+}
+
+.reviewname{
+  color: #ffffff !important;
+  font-family: 'Raleway', sans-serif !important; 
+  font-weight: 600 !important;
+  font-size: 20px !important;
+}
+
+.imgreview{
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+  margin : 0 auto !important;
+}
