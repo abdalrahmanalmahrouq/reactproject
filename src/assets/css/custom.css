@@ -358,3 +358,11 @@ a.social:hover{
   width: 100%;
   background: rgba(3, 34, 58, 0.7);
 }
+
+.contactusdescription{
+ 
+  font-family: 'Raleway', sans-serif !important; 
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  margin-left: 10rem !important;
+}
