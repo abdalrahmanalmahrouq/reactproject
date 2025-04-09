@@ -330,3 +330,31 @@ a.social:hover{
   font-weight: 400 !important;
   font-size: 15px !important;
 }
+
+.topAboutBanner{
+  background-image: url(../images/aboutus.jpg);
+  min-height: 550px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.topabouttitle{
+  font-size:50px;
+  color: #fff;
+  font-style: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+}
+.topAboutText{
+  margin-top: 18em;
+}
+
+.topPageLayout{
+  position: absolute;
+  min-height: 550px;
+  width: 100%;
+  background: rgba(3, 34, 58, 0.7);
+}

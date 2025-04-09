@@ -12,7 +12,7 @@ import { init } from 'ityped'
     return (
       <Fragment>
         <Container>
-        <h1 className='text-center servicetitle'>ALL COURSES</h1>
+        <h1 className='text-center servicetitle'>ABOUT ME</h1>
         <div className='buttom'></div>
             <Row>
                 <Col lg={6} md={6} sm={12} className='AboutImageBack text-center'>
