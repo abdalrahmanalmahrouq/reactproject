@@ -7,12 +7,13 @@ import Courses from './pages/Courses';
 import Portfolio from './pages/Portfolio';
 import Contactus from './components/Contactus/Contactus';
 import ContactUs from './pages/ContactUs';
+import Services from './pages/Services';
 
 function App() {
   return (
     <div >
     
-<ContactUs/>
+<Services/>
     </div>
   );
 }
