@@ -14,7 +14,7 @@ import Footer from '../components/Footer/Footer';
   render() {
     return (
       <Fragment>
-        <Topnavigation/>
+        <Topnavigation title="MAHROUQ SERVICES"/>
       <TopBanner />
       <Services/>
       <Analysis/>

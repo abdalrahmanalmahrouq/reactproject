@@ -4,15 +4,17 @@ import '../../assets/css/custom.css'
 import '../../assets/css/bootstrap.min.css'
 import logodark from '../../assets/images/logodark (2).png'
 import logowhite from '../../assets/images/logowhite.png'
+import { NavLink } from 'react-router-dom'
  class Topnavigation extends Component {
   
-    constructor() {
+    constructor(props) {
     super();
     this.state = {
       navBarTitle: "Topnavtitle",
       navBarLogo: [logowhite],// because it is object
       navBarBack:"navbarback",
       navItem:'navitem',
+      pageheader:props.title,
     };
   }
 
@@ -36,9 +38,10 @@ import logowhite from '../../assets/images/logowhite.png'
 
     return (
       <Fragment>
+        <title>{this.state.pageheader}</title>
         <Navbar expand="lg" className={this.state.navBarBack} fixed="top">
           <Container fluid>
-            <Navbar.Brand href="#" className={this.state.navBarTitle} >
+            <Navbar.Brand to="/" className={this.state.navBarTitle} >
              {/* <img src={this.state.navBarLogo} alt="" style={{height: 51, width: 181}}/> */}
              <h4>MAHROUQ SERVICES</h4>
             </Navbar.Brand>
@@ -47,12 +50,12 @@ import logowhite from '../../assets/images/logowhite.png'
               <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
               </Nav>
               <Nav>
-                <Nav.Link href="#" className={this.state.navItem}>HOME</Nav.Link>
-                <Nav.Link href="#" className={this.state.navItem}>ABOUT</Nav.Link>
-                <Nav.Link href="#" className={this.state.navItem}>SERVICES</Nav.Link>
-                <Nav.Link href="#" className={this.state.navItem}>COURSES</Nav.Link>
-                <Nav.Link href="#" className={this.state.navItem}>PORTFOLIO</Nav.Link>
-                <Nav.Link href="#" className={this.state.navItem}>CONTACT US</Nav.Link>
+                <Nav.Link><NavLink style={({ isActive }) => ({color: isActive ? 'yellow' : 'white',textDecoration: isActive ? 'none' : 'none'})} to="/" className={this.state.navItem}>HOME</NavLink></Nav.Link>
+                <Nav.Link><NavLink style={({ isActive }) => ({color: isActive ? 'yellow' : 'white',textDecoration: isActive ? 'none' : 'none'})} to="/about" className={this.state.navItem}>ABOUT</NavLink></Nav.Link>
+                <Nav.Link><NavLink style={({ isActive }) => ({color: isActive ? 'yellow' : 'white',textDecoration: isActive ? 'none' : 'none'})} to="/services" className={this.state.navItem}>SERVICES</NavLink></Nav.Link>
+                <Nav.Link><NavLink style={({ isActive }) => ({color: isActive ? 'yellow' : 'white',textDecoration: isActive ? 'none' : 'none'})} to="/courses" className={this.state.navItem}>COURSES</NavLink></Nav.Link>
+                <Nav.Link><NavLink style={({ isActive }) => ({color: isActive ? 'yellow' : 'white',textDecoration: isActive ? 'none' : 'none'})} to="/portfolio" className={this.state.navItem}>PORTFOLIO</NavLink></Nav.Link>
+                <Nav.Link><NavLink style={({ isActive }) => ({color: isActive ? 'yellow' : 'white',textDecoration: isActive ? 'none' : 'none'})} to="/contact" className={this.state.navItem}>CONTACT US</NavLink></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

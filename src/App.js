@@ -1,19 +1,14 @@
 import React from 'react';
-import Home from './pages/Home';
-import PageTop from './components/PageTop/PageTop';
-import AboutDescription from './components/AboutDescription/AboutDescription';
-import AboutUs from './pages/AboutUs';
-import Courses from './pages/Courses';
-import Portfolio from './pages/Portfolio';
-import Contactus from './components/Contactus/Contactus';
-import ContactUs from './pages/ContactUs';
-import Services from './pages/Services';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './router/AppRouter';
 
 function App() {
   return (
     <div >
-    
-<Services/>
+    <BrowserRouter>
+    <AppRouter/>
+    </BrowserRouter>
+
     </div>
   );
 }

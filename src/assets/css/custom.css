@@ -112,7 +112,7 @@
 
   .navitem{
     text-decoration: none;
-    color: #ffffff !important;
+    color: #ffffff ;
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 700 !important;
   }
@@ -333,7 +333,7 @@ a.social:hover{
 
 .topAboutBanner{
   background-image: url(../images/aboutus.jpg);
-  min-height: 550px;
+  min-height: 300px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -349,12 +349,12 @@ a.social:hover{
 
 }
 .topAboutText{
-  margin-top: 18em;
+  margin-top: 10em;
 }
 
 .topPageLayout{
   position: absolute;
-  min-height: 550px;
+  min-height: 300px;
   width: 100%;
   background: rgba(3, 34, 58, 0.7);
 }

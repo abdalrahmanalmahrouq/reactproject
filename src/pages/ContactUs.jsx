@@ -8,7 +8,7 @@ import Footer from '../components/Footer/Footer'
   render() {
     return (
       <Fragment>
-        <Topnavigation/>
+        <Topnavigation title="Contact Us"/>
         <PageTop pagetitle='Contact Us'/>
         <Contactus/>
         <Footer/>

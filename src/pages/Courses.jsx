@@ -8,7 +8,7 @@ export class Courses extends Component {
   render() {
     return (
     <Fragment>
-        <Topnavigation/>
+        <Topnavigation title="Courses"/>
         <PageTop pagetitle='Courses'/>
         <AllCourses/>
         <Footer/>

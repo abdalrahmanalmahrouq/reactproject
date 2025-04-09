@@ -3,11 +3,16 @@ import { Col, Container, Row } from 'react-bootstrap'
 import face from '../../assets/images/face.png'
 import { init } from 'ityped'
  class About extends Component {
+  
+   
+
     componentDidMount() {
         const myElement = document.querySelector('#myElement')
-        init(myElement, { showCursor: false, strings: ['I am a Software Engineer with a passion for creating innovative solutions', 'I have a strong background in web development!'] })
+        init(myElement, { showCursor: false, strings: ['I am a Software Engineer with a passion for creating innovative solutions', 'I have a strong background in web development!'] });
+       
     }
 
+    
   render() {
     return (
       <Fragment>

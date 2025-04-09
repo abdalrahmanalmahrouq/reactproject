@@ -9,7 +9,7 @@ import Contactus from '../components/Contactus/Contactus'
   render() {
     return (
       <Fragment>
-        <Topnavigation/>
+        <Topnavigation title="Services"/>
         <PageTop pagetitle='Services'/>
         <AllServices/>
         <Contactus/>

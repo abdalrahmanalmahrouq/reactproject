@@ -9,7 +9,7 @@ import About from '../components/About/About'
   render() {
     return (
       <Fragment>
-        <Topnavigation/>
+        <Topnavigation title="About Us"/>
         <PageTop pagetitle='About Us'/>
         <About/>
         <AboutDescription/>
