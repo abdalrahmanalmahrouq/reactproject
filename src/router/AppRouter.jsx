@@ -6,6 +6,7 @@ import Courses from '../pages/Courses'
 import Portfolio from '../pages/Portfolio'
 import Services from '../pages/Services'
 import { Routes ,Route} from 'react-router-dom'
+import Terms from '../pages/Terms'
 
  class AppRouter extends Component {
   render() {
@@ -20,6 +21,7 @@ import { Routes ,Route} from 'react-router-dom'
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/services" element={<Services />} />
                 
+                <Route path="/policy" element={<Terms />} />
             </Routes>
         </Fragment>
     )

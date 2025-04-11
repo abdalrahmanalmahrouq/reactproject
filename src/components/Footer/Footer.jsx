@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react'
-import { Container, Row,Col } from 'react-bootstrap'
+import { Container, Row,Col, Nav } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
  class Footer extends Component {
   render() {
@@ -18,10 +19,10 @@ import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-i
                 </div>
                 </Col>
 
-                <Col lg={3} md={6} sm={12}  >
-                <h2 className='footername '>Address</h2>
+                <Col lg={3} md={6} sm={12} style={{ textAlign: 'justify' }} >
+                <h2 className='footername text-center'>Address</h2>
 
-                <p className='footerdescription text-center' style={{ textAlign: 'justify' }}>
+                <p className='footerdescription ' >
                     Address: 19911 1st Ave NE, <br/>
                     Phone: +1 234 567 890<br/>
                     Email:abood@gmail.com<br/>
@@ -29,12 +30,22 @@ import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-i
                 </p>
                 </Col>
 
-                <Col lg={3} md={6} sm={12}>
-                <h2 className='footername'>Information</h2>
+                <Col lg={3} md={6} sm={12} style={{ textAlign: 'justify' }} >
+                <h2 className='footername text-center'>Information</h2>
+                <div className='footerdescription '  >
+                   <Nav.Link><Link  className='footerlink'  to="/about" >About Me</Link></Nav.Link> 
+                    <Nav.Link><Link  className='footerlink' to="/portfolio">Company Portfolio</Link></Nav.Link>
+                    <Nav.Link><Link className='footerlink'  to="/contact">Contact Us</Link></Nav.Link>
+                    </div>
                 </Col>
                 
-                <Col lg={3} md={6} sm={12}>
-                <h2 className='footername'>Policy</h2>
+                <Col lg={3} md={6} sm={12} style={{ textAlign: 'justify' }}>
+                <h2 className='footername text-center'>Policy</h2>
+                <div className='footerdescription '  >
+                   <Nav.Link><Link  className='footerlink'  to="/policy" >Found Policy</Link></Nav.Link> 
+                    <Nav.Link><Link  className='footerlink' to="/policy">Terms And Conditions</Link></Nav.Link>
+                    <Nav.Link><Link className='footerlink'  to="/policy">Privicy</Link></Nav.Link>
+                    </div>
                 </Col>
 
             </Row>
