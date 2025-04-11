@@ -9,7 +9,7 @@ import { init } from 'ityped'
     componentDidMount() {
         const myElement = document.querySelector('#myElement')
         init(myElement, { showCursor: false, strings: ['I am a Software Engineer with a passion for creating innovative solutions', 'I have a strong background in web development!'] });
-       
+        window.scrollTo(0, 0);
     }
 
     

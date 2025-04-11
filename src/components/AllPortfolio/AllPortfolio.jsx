@@ -1,6 +1,9 @@
 import React, { Component, Fragment } from 'react'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap'
  class AllPortfolio extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
   render() {
     return (
         <Fragment>

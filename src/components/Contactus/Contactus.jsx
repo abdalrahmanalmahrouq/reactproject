@@ -11,16 +11,21 @@ import { Button, Col, Container, Form, Row } from 'react-bootstrap'
 
                 <Form>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Label>Name</Form.Label>
+                            <Form.Control type="text" placeholder="Enter you Name" />
                             <Form.Text className="text-muted">
-                            Enter you email to contact us
+                            Enter you Name to contact us
                             </Form.Text>
                         </Form.Group>
 
                         <Form.Group className="mb-3" >
+                            <Form.Label>Email</Form.Label>
+                            <Form.Control type="email" placeholder='Enter you Email'  />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" >
                             <Form.Label>Your Massage</Form.Label>
-                            <Form.Control type="text"  />
+                            <textarea className="form-control" rows="3" placeholder='Enter your Massage' ></textarea> 
                         </Form.Group>
                         
                         <Button variant="primary" type="submit">

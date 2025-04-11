@@ -2,6 +2,9 @@ import React, { Component, Fragment } from 'react'
 import { Container,Col,Row } from 'react-bootstrap'
 
  class AllCourses extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
         <Fragment>

@@ -5,6 +5,9 @@ import Cooking from '../../assets/images/cooking.png'
 import Real from '../../assets/images/realstate.png'
 
  class AllServices extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
   render() {
     return (
         <Fragment>
