@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
  class Courses extends Component {
   render() {
@@ -19,7 +20,8 @@ import { Col, Container, Row } from 'react-bootstrap'
         <Col>
         <h5 className=' serviceName'>Introduction to Python</h5>
         <p className='servicedescription  text-justify'>Learn the basics of Python programming, including syntax, data types, and control structures, to build foundational coding skills.</p>
-        <a href="" className='viewdetails'> View Details</a>
+        
+        <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
         </Col>
 
         <Col lg={6} md={6} sm={12} className='p-3'>

@@ -43,7 +43,9 @@ import { NavLink } from 'react-router-dom'
           <Container fluid>
             <Navbar.Brand to="/" className={this.state.navBarTitle} >
              {/* <img src={this.state.navBarLogo} alt="" style={{height: 51, width: 181}}/> */}
-             <h4>MAHROUQ SERVICES</h4>
+             <NavLink  to="/" className={this.state.navItem}>
+              <h4>MAHROUQ SERVICES</h4>
+             </NavLink>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">

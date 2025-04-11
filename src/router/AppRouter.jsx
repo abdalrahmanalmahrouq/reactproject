@@ -10,6 +10,7 @@ import Terms from '../pages/Terms'
 import Termsandconditions from '../pages/Termsandconditions'
 import Privacypage from '../pages/Privacypage'
 import ProjectDetailPage from '../pages/ProjectDetailPage'
+import CourseDetailsPage from '../pages/CourseDetailsPage'
 
 
  class AppRouter extends Component {
@@ -31,6 +32,7 @@ import ProjectDetailPage from '../pages/ProjectDetailPage'
 
                 
                 <Route path="/projectdetails" element={<ProjectDetailPage />} />
+                <Route path="/coursedetails" element={<CourseDetailsPage />} />
 
                 
                 

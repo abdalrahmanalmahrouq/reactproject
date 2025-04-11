@@ -428,3 +428,92 @@ font-family: 'Montserrat', sans-serif !important;
   font-family: 'Raleway', sans-serif !important;
   font-weight: 600 !important;
 }
+
+.coursedetailstext{
+  font-family:  'Raleway', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.coursedetailsimg{
+width: 100% !important;
+}
+
+.coursedetailsdescription{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  color : #03326d !important;
+  font-size: 15px !important;
+}
+
+.widget_feature {
+  border: 1px solid #CBD6E2;
+}
+
+.widget_feature .widget-title {
+  padding: 18px 25px;
+  border-bottom: 1px solid #F0F4F9;
+  margin-bottom: 18px !important;
+}
+.widget_feature ul li i {
+  margin-right: 8px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.widget_feature ul {
+  padding: 0 40px 20px;
+}
+.btn {
+  height: 55px;
+  line-height: 55px;
+  padding: 0 36px;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+  border: 0;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  font-weight: 500;
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.btn-radius {
+  border-radius: 30px;
+}
+.btn-base {
+  color: yellow;
+  background: yellow;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.widget_feature .price-wrap {
+  background-color: #F0F4F9;
+  padding: 34px 23px 40px;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+  transition: 0.4s;
+}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-thickness: initial;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+  outline: none;
+  color: inherit;
+}
