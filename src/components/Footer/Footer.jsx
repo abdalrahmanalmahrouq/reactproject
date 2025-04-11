@@ -43,8 +43,8 @@ import { Link } from 'react-router-dom';
                 <h2 className='footername text-center'>Policy</h2>
                 <div className='footerdescription '  >
                    <Nav.Link><Link  className='footerlink'  to="/policy" >Found Policy</Link></Nav.Link> 
-                    <Nav.Link><Link  className='footerlink' to="/policy">Terms And Conditions</Link></Nav.Link>
-                    <Nav.Link><Link className='footerlink'  to="/policy">Privicy</Link></Nav.Link>
+                    <Nav.Link><Link  className='footerlink' to="/terms">Terms And Conditions</Link></Nav.Link>
+                    <Nav.Link><Link className='footerlink'  to="/privacy">Privicy</Link></Nav.Link>
                     </div>
                 </Col>
 
