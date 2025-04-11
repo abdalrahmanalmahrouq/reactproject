@@ -3,6 +3,9 @@ import { Button, Col, Container, Modal, Row } from 'react-bootstrap'
 import coursedetailimg from '../../assets/images/coursedetail.png'
 import ReactPlayer from 'react-player'
 export class CourseDetails extends Component {
+    componentDidMount() {   
+        window.scrollTo(0, 0);
+    }
   render() {
     return (
      <Fragment>

@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Container,Col,Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
  class AllCourses extends Component {
   componentDidMount() {
@@ -21,7 +22,7 @@ import { Container,Col,Row } from 'react-bootstrap'
                         <Col>
                         <h5 className=' serviceName'>Introduction to Python</h5>
                         <p className='servicedescription  text-justify'>Learn the basics of Python programming, including syntax, data types, and control structures, to build foundational coding skills.</p>
-                        <a href="" className='viewdetails'> View Details</a>
+                        <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
                         </Col>
 
 
@@ -31,7 +32,7 @@ import { Container,Col,Row } from 'react-bootstrap'
                         <Col>
                         <h5 className=' serviceName'>Introduction to Python</h5>
                         <p className='servicedescription  text-justify'>Learn the basics of Python programming, including syntax, data types, and control structures, to build foundational coding skills.</p>
-                        <a href="" className='viewdetails'> View Details</a>
+                        <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
                         </Col>
 
 
@@ -41,7 +42,7 @@ import { Container,Col,Row } from 'react-bootstrap'
                         <Col>
                         <h5 className=' serviceName'>Python for Data Analysis</h5>
                         <p className='servicedescription  text-justify'>Explore Python libraries like Pandas and NumPy to analyze and visualize data effectively.</p>
-                        <a href="" className='viewdetails'> View Details</a>
+                        <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
                         </Col>
                         <Col lg={6} md={6} sm={12} className='p-3'>
                         <img style={{width:'100%'}} src="https://img.freepik.com/free-photo/html-css-collage-concept_23-2150061955.jpg?t=st=1744117844~exp=1744121444~hmac=2b97a85408e45e13fd4edb94132d8bcddac15499e6e6a7f3a7ee0fa67507362a&w=900" alt="Data Analysis" />
@@ -49,7 +50,7 @@ import { Container,Col,Row } from 'react-bootstrap'
                         <Col>
                         <h5 className=' serviceName'>Python for Data Analysis</h5>
                         <p className='servicedescription  text-justify'>Explore Python libraries like Pandas and NumPy to analyze and visualize data effectively.</p>
-                        <a href="" className='viewdetails'> View Details</a>
+                        <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
                         </Col>
                 </Row>
           </Col>
@@ -64,7 +65,7 @@ import { Container,Col,Row } from 'react-bootstrap'
           <Col>
           <h5 className=' serviceName'>Python for Web Development</h5>
           <p className='servicedescription  text-justify'>Learn how to use Python frameworks like Django and Flask to create dynamic web applications.</p>
-          <a href="" className='viewdetails'> View Details</a>
+          <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
           </Col>
   
           <Col lg={6} md={6} sm={12} className='p-3'>
@@ -73,7 +74,7 @@ import { Container,Col,Row } from 'react-bootstrap'
           <Col>
           <h5 className=' serviceName'>Python for Web Development</h5>
           <p className='servicedescription  text-justify'>Learn how to use Python frameworks like Django and Flask to create dynamic web applications.</p>
-          <a href="" className='viewdetails'> View Details</a>
+          <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
           </Col>
 
           <Col lg={6} md={6} sm={12} className='p-3'>
@@ -82,7 +83,7 @@ import { Container,Col,Row } from 'react-bootstrap'
           <Col>
           <h5 className=' serviceName'>Python for Machine Learning</h5>
           <p className='servicedescription  text-justify'>Dive into machine learning with Python using libraries like scikit-learn and TensorFlow.</p>
-          <a href="" className='viewdetails'> View Details</a>
+          <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
           </Col>
 
           <Col lg={6} md={6} sm={12} className='p-3'>
@@ -91,7 +92,7 @@ import { Container,Col,Row } from 'react-bootstrap'
           <Col>
           <h5 className=' serviceName'>Python for Machine Learning</h5>
           <p className='servicedescription  text-justify'>Dive into machine learning with Python using libraries like scikit-learn and TensorFlow.</p>
-          <a href="" className='viewdetails'> View Details</a>
+          <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
           </Col>
 
           

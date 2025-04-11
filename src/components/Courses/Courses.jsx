@@ -31,7 +31,7 @@ import { Link } from 'react-router-dom'
         <Col>
         <h5 className=' serviceName'>Python for Data Analysis</h5>
         <p className='servicedescription  text-justify'>Explore Python libraries like Pandas and NumPy to analyze and visualize data effectively.</p>
-        <a href="" className='viewdetails'> View Details</a>
+        <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
         </Col>
         </Row>
         </Col>
@@ -45,7 +45,7 @@ import { Link } from 'react-router-dom'
         <Col>
         <h5 className=' serviceName'>Python for Web Development</h5>
         <p className='servicedescription  text-justify'>Learn how to use Python frameworks like Django and Flask to create dynamic web applications.</p>
-        <a href="" className='viewdetails'> View Details</a>
+        <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
         </Col>
 
         <Col lg={6} md={6} sm={12} className='p-3'>
@@ -55,7 +55,7 @@ import { Link } from 'react-router-dom'
         <Col>
         <h5 className=' serviceName'>Python for Machine Learning</h5>
         <p className='servicedescription  text-justify'>Dive into machine learning with Python using libraries like scikit-learn and TensorFlow.</p>
-        <a href="" className='viewdetails'> View Details</a>
+        <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
         </Col>
         </Row>
         </Col>
