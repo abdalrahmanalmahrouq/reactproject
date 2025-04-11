@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
  class RecentProjects extends Component {
   render() {
@@ -18,7 +19,7 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap'
                             <Card.Text className='servicedescription '>
                             We provide top-notch IT solutions to help your business thrive in the digital world.
                             </Card.Text>
-                            <Button variant="primary">Learn More</Button>
+                            <Button variant="primary" ><Link className='buttonproject' to={'/projectdetails'}>View More</Link></Button>
                         </Card.Body>
                 </Card>
                 </Col>
@@ -30,7 +31,7 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap'
                             <Card.Text className='servicedescription '>
                             Explore our professional cooking services to make your events unforgettable.
                             </Card.Text>
-                            <Button variant="primary">Learn More</Button>
+                            <Button variant="primary"  ><Link className='buttonproject' to={'/projectdetails'}>View More</Link></Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -42,7 +43,7 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap'
                             <Card.Text className='servicedescription '>
                             Find your dream property with our expert real estate services.
                             </Card.Text>
-                            <Button variant="primary">Learn More</Button>
+                            <Button variant="primary" ><Link className='buttonproject' to={'/projectdetails'}>View More</Link></Button>
                         </Card.Body>
                 </Card>
                 </Col>

@@ -9,6 +9,8 @@ import { Routes ,Route} from 'react-router-dom'
 import Terms from '../pages/Terms'
 import Termsandconditions from '../pages/Termsandconditions'
 import Privacypage from '../pages/Privacypage'
+import ProjectDetailPage from '../pages/ProjectDetailPage'
+
 
  class AppRouter extends Component {
   render() {
@@ -26,6 +28,12 @@ import Privacypage from '../pages/Privacypage'
                 <Route path="/policy" element={<Terms />} />
                 <Route path="/terms" element={<Termsandconditions />} />
                 <Route path="/privacy" element={<Privacypage />} />
+
+                
+                <Route path="/projectdetails" element={<ProjectDetailPage />} />
+
+                
+                
             </Routes>
         </Fragment>
     )
