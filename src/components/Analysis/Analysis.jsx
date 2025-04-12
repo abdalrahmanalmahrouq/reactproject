@@ -1,26 +1,36 @@
 import React, { Component, Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts'
-
+import RestUrl from '../../RestApi/RestUrl'
+import RestClient from '../../RestApi/RestClient'
  class Analysis extends Component {
 
-
-  constructor() {
+  constructor(){
     super();
-    this.state = {
-      data: [
-        { name: 'React', value: 90 },
-        { name: 'JavaScript', value: 80 },
-        { name: 'HTML', value: 60 },
-        { name: 'CSS', value: 65 },
-        { name: 'LARAVEL', value: 79 },
-      ],
-    };
+      this.state={
+       data:[]
+      }
+    }
+  
+    componentDidMount(){
+      RestClient.GetRequest(RestUrl.AllCharts).then(result=>{
+        this.setState({
+         data:result,
+        });
+      }).catch(error=>{
+        this.setState({
+          data:[],
+        });
+    })
   }
 
 
 
+
+
+
   render() {
+    
 
     return (
       <Fragment>
@@ -28,11 +38,11 @@ import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts'
           <h1 className='text-center servicetitle'>TECHNOLOGY USED</h1>
           <div className='buttom'></div>
           <Row>
-            <Col  lg={6} md={6} sm={12} >
+          <Col  lg={6} md={6} sm={12} >
               <ResponsiveContainer style={{width:'100%',height:'300px' }}>
                     <BarChart width={100} height={300} data={this.state.data}>
-                        <XAxis dataKey="name" />
-                        <Bar dataKey='value' fill="#03326d" />
+                        <XAxis dataKey="X_data" />
+                        <Bar dataKey='Y_data' fill="#03326d" />
                         <Tooltip/>
 
                     </BarChart>
