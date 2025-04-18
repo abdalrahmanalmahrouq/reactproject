@@ -44,7 +44,7 @@ import RestClient from '../../RestApi/RestClient'
             <h5 className=' serviceName'>{MyList.small_title}</h5>
             <p className='servicedescription  text-justify'> {MyList.small_description}</p>
             
-            <Link className='viewdetails' to={'/coursedetails'}> View Details</Link>
+            <Link className='viewdetails' to={'/coursedetails/'+MyList.id}> View Details</Link>
             </Col>
     
             

@@ -21,7 +21,7 @@
 
   static CourseHome=this.BaseUrl+'/coursehome'
   static CourseAll=this.BaseUrl+'/courseall'
-  static SelectCourse=this.BaseUrl+'/oncourse'
+  static SelectCourse=this.BaseUrl+'/oncourse/'
   
   static AddContact=this.BaseUrl+'/addcontact'
   

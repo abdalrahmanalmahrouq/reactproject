@@ -2,10 +2,62 @@ import React, { Component, Fragment } from 'react'
 import { Button, Col, Container, Modal, Row } from 'react-bootstrap'
 import coursedetailimg from '../../assets/images/coursedetail.png'
 import ReactPlayer from 'react-player'
+import RestUrl from '../../RestApi/RestUrl'
+import RestClient from '../../RestApi/RestClient'
 export class CourseDetails extends Component {
-    componentDidMount() {   
-        window.scrollTo(0, 0);
+
+    constructor(props){
+        super();
+        this.state={
+            MyCourseId:props.id,
+            large_title:'',
+            large_description:'',
+            large_img:'',
+            enrolled_students:'',
+            duration:'',
+            lecutres:'',
+            category:'',
+            tags:'',
+            instructor:'',    
+            price:'',
+            skill_description:'',
+            vstringeo_url:'',
+           
+            
+        }
     }
+
+
+    componentDidMount(){
+        window.scrollTo(0, 0);
+        RestClient.GetRequest(RestUrl.SelectCourse+this.state.MyCourseId).then(result=>{
+          this.setState({
+            // img_two:result[0]['img_two'],
+            // project_name:result[0]['project_name'],
+            // project_description:result[0]['project_description'],
+            // prject_features:result[0]['prject_features'],
+            // live_preview:result[0]['live_preview']
+            large_title:result[0]['large_title'],
+            large_description:result[0]['large_description'],
+            large_img:result[0]['large_img'],
+            enrolled_students:result[0]['enrolled_students'],
+            duration:result[0]['duration'],
+            lecutres:result[0]['lecutres'],
+            category:result[0]['category'],
+            tags:result[0]['tags'],
+            instructor:result[0]['instructor'],
+            price:result[0]['price'],
+            skill_description:result[0]['skill_description'],
+            vstringeo_url:result[0]['vstringeo_url'],
+            
+
+          })
+        })
+      }
+
+
+
+
   render() {
     return (
      <Fragment>
@@ -14,13 +66,13 @@ export class CourseDetails extends Component {
                 <Col lg={8} md={6} sm={12}>
                 <div>
                     <div>
-                    <h1 className='coursedetailstext'>Education in continuing a proud tradition.</h1>  
+                    <h1 className='coursedetailstext'> {this.state.large_title} </h1>  
                     </div>
-                     <img className='coursedetailsimg' src={coursedetailimg} alt="" />
+                     <img className='coursedetailsimg' src={this.state.large_img} alt="" />
                      <br />
                      <br />
                      <p className='coursedetailsdescription'> 
-                     The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. <br /> Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, <br /> vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. <br /> Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. <br /> Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy  red vixens fight for a quick jump.
+                     {this.state.large_description}
                      </p>
 
                 </div>
@@ -32,12 +84,12 @@ export class CourseDetails extends Component {
                 <div className="widget widget_feature mt-5" >
                             <h4 className="widget-title">Course Features</h4>                                 
                             <ul >
-                                <li><i className="fa fa-user"></i><span>Enrolled :</span> 1200 students</li>
-                                <li><i className="fa fa-clock-o"></i><span>Duration :</span> 2 hours</li>
-                                <li><i className="fa fa-clipboard"></i><span>Lectures :</span> 8</li>
-                                <li><i className="fa fa-clone"></i><span>Categories:</span> Technology</li>
-                                <li><i className="fa fa-tags"></i><span>Tags:</span> Android, JavaScript</li>
-                                <li><i className="fa fa-clipboard"></i><span>Instructor:</span> Ethan Dean</li>
+                                <li><i className="fa fa-user"></i><span>Enrolled :</span> {this.state.enrolled_students}</li>
+                                <li><i className="fa fa-clock-o"></i><span>Duration :</span> {this.state.duration}</li>
+                                <li><i className="fa fa-clipboard"></i><span>Lectures :</span> {this.state.lecutres}</li>
+                                <li><i className="fa fa-clone"></i><span>Categories:</span> {this.state.category}</li>
+                                <li><i className="fa fa-tags"></i><span>Tags:</span> {this.state.tags}</li>
+                                <li><i className="fa fa-clipboard"></i><span>Instructor:</span> {this.state.instructor}</li>
                             </ul>
                             <div className="price-wrap text-center">
                                 <h5>Price:<span>$54.00</span></h5>
@@ -55,15 +107,7 @@ export class CourseDetails extends Component {
                         <h1 className='coursedetailstext'> Skill You Need</h1>
                         <hr />
                         <ul>
-                            <li>Metus interdum metus</li>
-                            <li> Ligula cur maecenas
-                            Fringilla nulla</li>
-                            <li>Metus interdum metus</li>
-                            <li> Ligula cur maecenas
-                            Fringilla nulla</li>
-                            <li>Metus interdum metus</li>
-                            <li> Ligula cur maecenas
-                            Fringilla nulla</li>
+                            {this.state.skill_description}
                         </ul>
                     </div>
                     </Col>
@@ -71,7 +115,7 @@ export class CourseDetails extends Component {
 
                     <Col lg={6} md={6} sm={12}>
                     
-                    <Modal.Body><ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' /></Modal.Body>
+                    <Modal.Body><ReactPlayer url={this.state.vstringeo_url} /></Modal.Body>
                     </Col>
                 </Row>
             </Container>

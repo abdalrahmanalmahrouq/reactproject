@@ -13,6 +13,7 @@ import ProjectDetailPage from '../pages/ProjectDetailPage'
 import CourseDetailsPage from '../pages/CourseDetailsPage'
 
 import ProjectDetailWrapper from '../components/ProjectDetails/ProjectDetailWrapper'
+import CourseDetailsWrapper from '../components/CourseDetails/CourseDetailsWrapper'
  class AppRouter extends Component {
   render() {
     return (
@@ -31,10 +32,11 @@ import ProjectDetailWrapper from '../components/ProjectDetails/ProjectDetailWrap
                 <Route path="/privacy" element={<Privacypage />} />
 
                 
-               
+                {/* <Route path="/projectdetails/:projectID" element={<ProjectDetailPage />} /> */}
                 <Route path="/project/:projectID" element={<ProjectDetailWrapper />} />
 
-                <Route path="/coursedetails" element={<CourseDetailsPage />} />
+                {/* <Route path="/coursedetails" element={<CourseDetailsPage />} /> */}
+                <Route path='/coursedetails/:courseID' element={<CourseDetailsWrapper/>}/>
 
                 
                 
