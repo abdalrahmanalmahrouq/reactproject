@@ -35,7 +35,7 @@ import RestClient from '../../RestApi/RestClient'
                             <Card.Text className='servicedescription '>
                            {MyList.project_description}
                             </Card.Text>
-                            <Button variant="primary" ><Link className='buttonproject' to={'/projectdetails'}>View More</Link></Button>
+                            <Button variant="primary" ><Link className='buttonproject' to={'/project/'+MyList.id}>View More</Link></Button>
                         </Card.Body>
                 </Card>
                 </Col>

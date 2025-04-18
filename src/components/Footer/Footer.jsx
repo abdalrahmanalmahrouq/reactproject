@@ -3,8 +3,30 @@ import { Container, Row,Col, Nav } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
-
+import RestUrl from '../../RestApi/RestUrl'
+import RestClient from '../../RestApi/RestClient'
  class Footer extends Component {
+  constructor(){
+    super();
+    this.state={
+      address:"",
+      phone:'',
+      email:'',
+    }
+  }
+  componentDidMount(){
+    RestClient.GetRequest(RestUrl.FooterData).then(result=>{
+      this.setState({
+        address:result[0]['address'],
+        phone:result[0]['phone'],
+        email:result[0]['email'],
+     
+      })
+    })
+  }
+
+
+
   render() {
     return (
       <Fragment>
@@ -23,9 +45,9 @@ import { Link } from 'react-router-dom';
                 <h2 className='footername text-center'>Address</h2>
 
                 <p className='footerdescription ' >
-                    Address: 19911 1st Ave NE, <br/>
-                    Phone: +1 234 567 890<br/>
-                    Email:abood@gmail.com<br/>
+                    Address: {this.state.address} <br/>
+                    Phone: {this.state.phone}<br/>
+                    Email:{this.state.email}<br/>
                     Website: www.abood.com<br/>
                 </p>
                 </Col>

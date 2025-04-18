@@ -10,7 +10,7 @@
 
   static ProjectHome=this.BaseUrl+'/prjecthomedata'
   static ProjectData=this.BaseUrl+'/projectalldata'
-  static SelectProject=this.BaseUrl+'/onproject'
+  static SelectProject=this.BaseUrl+'/onproject/'
 
 
   static AllServiceData=this.BaseUrl+'/servicesdata'

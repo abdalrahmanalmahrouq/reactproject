@@ -12,7 +12,7 @@ import Privacypage from '../pages/Privacypage'
 import ProjectDetailPage from '../pages/ProjectDetailPage'
 import CourseDetailsPage from '../pages/CourseDetailsPage'
 
-
+import ProjectDetailWrapper from '../components/ProjectDetails/ProjectDetailWrapper'
  class AppRouter extends Component {
   render() {
     return (
@@ -31,7 +31,9 @@ import CourseDetailsPage from '../pages/CourseDetailsPage'
                 <Route path="/privacy" element={<Privacypage />} />
 
                 
-                <Route path="/projectdetails" element={<ProjectDetailPage />} />
+               
+                <Route path="/project/:projectID" element={<ProjectDetailWrapper />} />
+
                 <Route path="/coursedetails" element={<CourseDetailsPage />} />
 
                 
