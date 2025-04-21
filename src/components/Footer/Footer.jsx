@@ -5,6 +5,8 @@ import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-i
 import { Link } from 'react-router-dom';
 import RestUrl from '../../RestApi/RestUrl'
 import RestClient from '../../RestApi/RestClient'
+import Loading from '../Loading/Loading';
+import WentWrong from '../WentWrong/WentWrong';
  class Footer extends Component {
   constructor(){
     super();
@@ -12,22 +14,40 @@ import RestClient from '../../RestApi/RestClient'
       address:"",
       phone:'',
       email:'',
+     
+      error:false,
     }
   }
   componentDidMount(){
     RestClient.GetRequest(RestUrl.FooterData).then(result=>{
+
+      if (result==null){
+        this.setState({error:true})
+      }
+      else{
       this.setState({
         address:result[0]['address'],
         phone:result[0]['phone'],
         email:result[0]['email'],
+        
+        
      
       })
-    })
+    }
+    }).catch(error=>{
+      this.setState({
+        error:true
+      });
+  })
   }
 
 
 
   render() {
+
+    if (this.state.error==false){
+    
+    
     return (
       <Fragment>
         <Container fluid={true} className='topfooter p-5'>
@@ -75,7 +95,11 @@ import RestClient from '../../RestApi/RestClient'
 
       </Fragment>
     )
+  } // end if
+  else if(this.state.error==true){
+    return <WentWrong/>
   }
 }
-
+}
+ 
 export default Footer
