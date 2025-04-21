@@ -3,13 +3,14 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import RestUrl from '../../RestApi/RestUrl'
 import RestClient from '../../RestApi/RestClient'
-
+import Loading from '../Loading/Loading';
  class AllPortfolio extends Component {
 
     constructor(){
         super();
           this.state={
-           mydata:[]
+           mydata:[],
+           loading:true
           }
         }
       
@@ -18,6 +19,8 @@ import RestClient from '../../RestApi/RestClient'
           RestClient.GetRequest(RestUrl.ProjectData).then(result=>{
             this.setState({
              mydata:result,
+             mydata:result,
+              loading:false
             });
           }).catch(error=>{
             this.setState({
@@ -30,7 +33,9 @@ import RestClient from '../../RestApi/RestClient'
    
   render() {
 
-
+    if (this.state.loading==true){
+      return <Loading/>
+    }else{
      const MyList=this.state.mydata;
         const MyListView=MyList.map(MyList=>{
           return (
@@ -64,5 +69,6 @@ import RestClient from '../../RestApi/RestClient'
     )
   }
 }
+ }
 
 export default AllPortfolio

@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Button, Col, Container, Form, Row } from 'react-bootstrap'
 import RestUrl from '../../RestApi/RestUrl'
 import RestClient from '../../RestApi/RestClient'
+import Loading from '../Loading/Loading';
  class Contactus extends Component {
   constructor(){
     super();
@@ -9,6 +10,7 @@ import RestClient from '../../RestApi/RestClient'
       address:"",
       phone:'',
       email:'',
+      loading:true
     }
   }
   componentDidMount(){
@@ -17,6 +19,7 @@ import RestClient from '../../RestApi/RestClient'
         address:result[0]['address'],
         phone:result[0]['phone'],
         email:result[0]['email'],
+        loading:false
      
       })
     })
@@ -29,6 +32,7 @@ import RestClient from '../../RestApi/RestClient'
     
     let jsonObject={name:name,email:email,massage:massage};
     RestClient.PostRequest(RestUrl.AddContact,JSON.stringify(jsonObject)).then(result=>{
+    
       alert(result);
     }).catch(error=>{
       alert("Error");
@@ -37,6 +41,12 @@ import RestClient from '../../RestApi/RestClient'
   }
 
   render() {
+
+    if (this.state.loading==true){
+      return <Loading/>
+    }
+
+    else{
     return (
       <Fragment>
         <Container className='mt-5'>
@@ -83,5 +93,6 @@ import RestClient from '../../RestApi/RestClient'
     )
   }
 }
+ }
 
 export default Contactus
